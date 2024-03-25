@@ -113,7 +113,7 @@ const handleRightDirectionClick = () => {
       </Camera>
       {/* Right button */}
       <TouchableOpacity 
-        style={styles.invisibleButtonRight} 
+        style={styles.testButtonRight} 
         onPress={() => { 
           setRightLineColor(rightLineColor === 'green' ? 'red' : 'green'); 
         }}
@@ -121,14 +121,14 @@ const handleRightDirectionClick = () => {
 
       {/* Middle button */}
       <TouchableOpacity 
-        style={styles.invisibleButtonMiddle} 
+        style={styles.testButtonMiddle} 
         onPress={() => { 
           setTopDashColor(topDashColor === 'green' ? 'red' : 'green');
         }}
       /> 
       {/* Middle button */}
       <TouchableOpacity 
-        style={styles.invisibleButtonMiddleBottom} 
+        style={styles.testButtonMiddleBottom} 
         onPress={() => { 
           setBottomDashColor(bottomDashColor === 'green' ? 'red' : 'green');
         }}
@@ -136,7 +136,7 @@ const handleRightDirectionClick = () => {
 
       {/* Left Button */}
       <TouchableOpacity 
-        style={styles.invisibleButtonLeft} 
+        style={styles.testButtonLeft} 
         onPress={() => { 
           setLeftLineColor(leftLineColor === 'green' ? 'red' : 'green');
         }}
@@ -284,7 +284,7 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     borderStyle: 'dashed', 
   },
-  invisibleButtonRight: {
+  testButtonRight: {
     width: 50,
     height: 50, 
     backgroundColor: 'transparent', 
@@ -293,7 +293,7 @@ const styles = StyleSheet.create({
     bottom: 30,
     right: 30,
   },
-  invisibleButtonLeft: {
+  testButtonLeft: {
     width: 50,
     height: 50, 
     backgroundColor: 'transparent', 
@@ -302,7 +302,7 @@ const styles = StyleSheet.create({
     bottom: 30,
     left: 30,
   },
-  invisibleButtonMiddle: { 
+  testButtonMiddle: { 
     width: 50,  
     height: 50, 
     backgroundColor: 'transparent', 
@@ -311,7 +311,7 @@ const styles = StyleSheet.create({
     bottom: 150,
     alignSelf: 'center', 
   },
-  invisibleButtonMiddleBottom: { 
+  testButtonMiddleBottom: { 
     width: 50,  
     height: 50, 
     backgroundColor: 'transparent', 
